@@ -19,7 +19,7 @@ runs:
     - uses: actions/checkout@v3
       with:
         repository: yougellysjelly/actionuser
-        ref: $inputs.tag-to-checkout
+        ref: ${{ inputs.tag-to-checkout }}
         submodules: 'recursive'
     - run: ls $GITHUB_WORKSPACE
       shell: bash
