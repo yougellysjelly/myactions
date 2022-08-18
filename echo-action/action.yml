@@ -24,3 +24,8 @@ runs:
         submodules: 'recursive'
     - run: tar -czvf source_code_with_modules.tar.gz ./curr-repo
       shell: bash
+    - name: release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: source_code_with_modules.tar.gz
+      
