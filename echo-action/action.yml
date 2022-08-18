@@ -18,7 +18,7 @@ runs:
       shell: bash
     - uses: actions/checkout@v3
       with:
-        repository: yougellysjelly/actionuser
+        repository: ${{ inputs.repository-to-clone }}
         ref: ${{ inputs.tag-to-checkout }}
         submodules: 'recursive'
     - run: ls $GITHUB_WORKSPACE
