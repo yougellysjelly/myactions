@@ -21,5 +21,5 @@ runs:
         repository: ${{ inputs.repository-to-clone }}
         ref: ${{ inputs.tag-to-checkout }}
         submodules: 'recursive'
-    - run: ls $GITHUB_WORKSPACE
+    - run: ls
       shell: bash
